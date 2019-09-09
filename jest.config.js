@@ -1,20 +1,20 @@
 module.exports = {
 	globals: {
 		'ts-jest': {
-			tsConfigFile: 'tsconfig.json',
-			skipBabel: true
+			tsConfig: 'tsconfig.json',
 		}
 	},
 	moduleFileExtensions: [
 		'ts',
 		'js', 
-		'json'
+		'json',
 	],
 	transform: {
-		'^.+\\.(ts|tsx)$': 'ts-jest'
+		'^.+\\.(ts|tsx)$': 'ts-jest',
 	},
 	testMatch: [
-		'**/test/**/*.test.(ts|js)'
+		'**/test/**/*.spec.(ts|js)',
 	],
 	testEnvironment: 'node',
+	preset: 'ts-jest',
 };

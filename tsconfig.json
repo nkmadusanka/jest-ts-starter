@@ -5,6 +5,9 @@
     "moduleResolution": "node",
     "module": "commonjs",
     "target": "es2017",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
     "allowJs": true,
     "sourceMap": true
   },
